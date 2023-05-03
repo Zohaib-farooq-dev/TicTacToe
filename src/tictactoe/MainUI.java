@@ -43,11 +43,11 @@ public class MainUI extends javax.swing.JFrame {
     }
     private void highlight(){
         if(startgame.equalsIgnoreCase("X")){
-            playero.setForeground(Color.LIGHT_GRAY);
-            //playerx.setForeground(Color.red);
+            playero.setForeground(Color.red);
+            playerx.setForeground(Color.LIGHT_GRAY);
         }else{
-            playerx.setForeground(Color.red);
-            //playero.setForeground(Color.red);
+            playerx.setForeground(Color.RED);
+            playero.setForeground(Color.LIGHT_GRAY);
         }
     }
     private void dehighlight(){
@@ -507,10 +507,8 @@ public class MainUI extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+         highlight();
         jButton1.setText(startgame);
-         
-        highlight();
-        dehighlight();
         if(startgame.equalsIgnoreCase("X"))
         {
             jButton1.setForeground(Color.RED);
@@ -538,7 +536,6 @@ public class MainUI extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         jButton3.setText(startgame);
-         dehighlight();
         highlight();
         if(startgame.equalsIgnoreCase("X"))
         {
@@ -557,7 +554,6 @@ public class MainUI extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         jButton4.setText(startgame);
-         dehighlight();
         highlight();
         if(startgame.equalsIgnoreCase("X"))
         {
@@ -576,7 +572,6 @@ public class MainUI extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         jButton5.setText(startgame);
-         dehighlight();
         highlight();
         if(startgame.equalsIgnoreCase("X"))
         {
@@ -595,7 +590,6 @@ public class MainUI extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         jButton6.setText(startgame);
-         dehighlight();
         highlight();
         if(startgame.equalsIgnoreCase("X"))
         {
@@ -614,7 +608,6 @@ public class MainUI extends javax.swing.JFrame {
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
         jButton7.setText(startgame);
-         dehighlight();
         highlight();
         if(startgame.equalsIgnoreCase("X"))
         {
@@ -641,7 +634,6 @@ public class MainUI extends javax.swing.JFrame {
         {
            jButton8.setForeground(Color.MAGENTA);
         }
-        dehighlight();
         highlight();
         choose_a_player();
         i++;
@@ -659,7 +651,6 @@ public class MainUI extends javax.swing.JFrame {
         {
            jButton9.setForeground(Color.MAGENTA);
         }
-        dehighlight();
         highlight();
         i++;
         choose_a_player();
